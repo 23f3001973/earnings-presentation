@@ -1,97 +1,540 @@
-<!doctype html>
-<html lang="en">
-  <head>
+   <!DOCTYPE html>
+<html>
+<head>
     <meta charset="utf-8">
-    <title>Earnings Presentation - Atin Datta</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- RevealJS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css">
-    
-    <!-- Code highlighting -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Q3 2025 Earnings Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
+    <style>
+        .reveal .slides section {
+            text-align: left;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-align: center;
+            color: #42A5F5;
+        }
+        .reveal .title-slide {
+            text-align: center;
+        }
+        .financial-metric {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .metric-label {
+            font-size: 1.2em;
+            color: #E0E0E0;
+        }
+        .email-contact {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 0.8em;
+            color: #888;
+        }
+        .code-highlight {
+            background: #2d3748;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #42A5F5;
+        }
+        .growth-indicator {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .decline-indicator {
+            color: #f44336;
+            font-weight: bold;
+        }
+        .chart-container {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
     <div class="reveal">
-      <div class="slides">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section class="title-slide" data-background-gradient="linear-gradient(45deg, #1e3c72, #2a5298)">
+                <h1>Q3 2025 Earnings Report</h1>
+                <h3>Financial Performance & Strategic Outlook</h3>
+                <p style="margin-top: 50px;">
+                    <small>Prepared by Technical Consulting Team</small><br>
+                    <small style="color: #42A5F5;">Contact: 23f3001973@ds.study.iitm.ac.in</small>
+                </p>
+                <aside class="notes">
+                    Welcome to our Q3 2025 earnings presentation. Today we'll cover our financial performance, 
+                    key metrics, technical innovations, and future outlook. This presentation demonstrates 
+                    our commitment to modern presentation technology and data-driven insights.
+                </aside>
+            </section>
 
-        <!-- Title Slide -->
-        <section>
-          <h1>Quarterly Earnings Report</h1>
-          <p><strong>Technical Consultant:</strong> Atin Datta</p>
-          <p><strong>Email:</strong> 23f3001973@ds.study.iitm.ac.in</p>
-          <aside class="notes">
-            Introduce yourself and highlight that this is a modern interactive report.
-          </aside>
-        </section>
+            <!-- Executive Summary -->
+            <section>
+                <h2>Executive Summary</h2>
+                <div class="fragment fade-in">
+                    <div class="financial-metric">
+                        <div class="metric-label">Total Revenue</div>
+                        <div class="metric-value">$2.4B</div>
+                        <div class="growth-indicator">↗ +15.3% YoY</div>
+                    </div>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="1">
+                    <div class="financial-metric">
+                        <div class="metric-label">Net Income</div>
+                        <div class="metric-value">$485M</div>
+                        <div class="growth-indicator">↗ +22.1% YoY</div>
+                    </div>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="2">
+                    <div class="financial-metric">
+                        <div class="metric-label">Earnings Per Share</div>
+                        <div class="metric-value">$3.42</div>
+                        <div class="growth-indicator">↗ +18.5% YoY</div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Our Q3 results show strong performance across all key metrics. Revenue growth was driven by 
+                    our digital transformation initiatives and expanded market presence. The 22% increase in 
+                    net income reflects improved operational efficiency and strategic cost management.
+                </aside>
+            </section>
 
-        <!-- Markdown Slide -->
-        <section data-markdown>
-          <textarea data-template>
-            ## Key Highlights (Markdown Slide)
-            - Revenue growth: **15% YoY**
-            - Net Profit: **₹120 Cr**
-            - EPS: **₹25.4**
-          </textarea>
-          <aside class="notes">
-            Use this slide to quickly summarize financial performance.
-          </aside>
-        </section>
+            <!-- Market Analysis in Markdown -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Market Analysis & Positioning
 
-        <!-- Animated Fragments -->
-        <section>
-          <h2>Revenue Breakdown</h2>
-          <ul>
-            <li class="fragment">Retail Banking: 40%</li>
-            <li class="fragment">Corporate Banking: 35%</li>
-            <li class="fragment">Wealth Management: 25%</li>
-          </ul>
-          <aside class="notes">
-            Reveal each segment one by one to keep stakeholders engaged.
-          </aside>
-        </section>
+                    ### Key Market Drivers
+                    - **Digital Banking Adoption**: 78% increase in mobile transactions
+                    - **Fintech Integration**: Strategic partnerships yielding 25% cost reduction
+                    - **Regulatory Compliance**: 100% compliance with new Basel IV requirements
+                    
+                    ### Competitive Landscape
+                    | Metric | Our Bank | Industry Avg | Best in Class |
+                    |--------|----------|--------------|---------------|
+                    | ROE    | 14.2%    | 11.8%        | 15.1%        |
+                    | CET1   | 12.8%    | 11.2%        | 13.5%        |
+                    | NIM    | 3.45%    | 2.98%        | 3.67%        |
 
-        <!-- Code Highlighting -->
-        <section>
-          <h2>Sample Python Analysis</h2>
-          <pre><code class="language-python">
-import pandas as pd
+                    > "Innovation in financial services isn't just about technology—it's about reimagining customer experience."
+                </textarea>
+                <aside class="notes">
+                    Our market position has strengthened significantly this quarter. The surge in digital banking 
+                    adoption has played to our strengths in technology infrastructure. Our fintech partnerships 
+                    are delivering both cost savings and enhanced customer capabilities.
+                </aside>
+            </section>
 
-data = {"Q1": [120], "Q2": [135], "Q3": [150], "Q4": [160]}
-df = pd.DataFrame(data)
-print("Annual Revenue:", df.sum().sum())
-          </code></pre>
-          <aside class="notes">
-            Demonstrate integration of data analytics with Python.
-          </aside>
-        </section>
+            <!-- Technical Implementation -->
+            <section>
+                <h2>Technical Infrastructure & Innovation</h2>
+                <div class="fragment fade-in">
+                    <h3>Risk Management Algorithm</h3>
+                    <div class="code-highlight">
+                        <pre><code class="python" data-trim data-noescape>
+def calculate_var(portfolio, confidence_level=0.95, time_horizon=1):
+    """
+    Calculate Value at Risk using Monte Carlo simulation
+    """
+    returns = portfolio.get_historical_returns()
+    volatility = returns.std() * np.sqrt(252)  # Annualized volatility
+    
+    # Monte Carlo simulation
+    num_simulations = 10000
+    random_returns = np.random.normal(
+        returns.mean(), volatility, num_simulations
+    )
+    
+    # Calculate VaR at specified confidence level
+    var = np.percentile(random_returns, (1 - confidence_level) * 100)
+    return abs(var * portfolio.total_value * np.sqrt(time_horizon))
 
-        <!-- Math Equations -->
-        <section>
-          <h2>Financial Formula</h2>
-          <p>Return on Investment (ROI):</p>
-          <p>$$ ROI = \frac{Net\ Profit}{Investment} \times 100 $$</p>
-          <aside class="notes">
-            Explain how ROI is calculated as part of financial analysis.
-          </aside>
-        </section>
+# Implementation result: 99.9% accuracy in risk prediction
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="1">
+                    <p><span class="growth-indicator">Performance Improvement:</span> 40% faster risk calculations with 99.9% accuracy</p>
+                </div>
+                <aside class="notes">
+                    Our new risk management system represents a significant technological advancement. The Monte Carlo 
+                    implementation has reduced calculation time by 40% while maintaining 99.9% accuracy. This allows 
+                    for real-time risk assessment across our entire portfolio.
+                </aside>
+            </section>
 
-      </div>
+            <!-- Financial Formulas -->
+            <section>
+                <h2>Key Financial Metrics & Calculations</h2>
+                <div class="fragment fade-in">
+                    <h3>Return on Equity (ROE)</h3>
+                    <p>$$ROE = \frac{\text{Net Income}}{\text{Shareholders' Equity}} = \frac{485M}{3.42B} = 14.2\%$$</p>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="1">
+                    <h3>Capital Adequacy Ratio</h3>
+                    <p>$$CAR = \frac{\text{Tier 1 Capital} + \text{Tier 2 Capital}}{\text{Risk Weighted Assets}} \times 100$$</p>
+                    <p>$$CAR = \frac{2.8B + 0.9B}{28.9B} \times 100 = 12.8\%$$</p>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="2">
+                    <h3>Net Interest Margin</h3>
+                    <p>$$NIM = \frac{\text{Interest Income} - \text{Interest Expense}}{\text{Average Earning Assets}}$$</p>
+                    <p class="growth-indicator">Current NIM: 3.45% (Industry leading)</p>
+                </div>
+                <aside class="notes">
+                    These metrics demonstrate our strong financial position. Our ROE of 14.2% significantly exceeds 
+                    industry averages. The Capital Adequacy Ratio of 12.8% provides a strong buffer above regulatory 
+                    requirements, and our Net Interest Margin leadership reflects efficient asset utilization.
+                </aside>
+            </section>
+
+            <!-- Digital Transformation -->
+            <section>
+                <h2>Digital Transformation Results</h2>
+                <div class="chart-container">
+                    <div class="fragment fade-in">
+                        <h3>API Integration Performance</h3>
+                        <pre><code class="javascript" data-trim>
+// Real-time transaction processing
+const processTransaction = async (transactionData) => {
+    const riskScore = await riskEngine.evaluate(transactionData);
+    
+    if (riskScore < RISK_THRESHOLD) {
+        return await executeTransaction(transactionData);
+    } else {
+        return await escalateToHumanReview(transactionData);
+    }
+};
+
+// Performance metrics: 
+// - Average processing time: 145ms
+// - 99.97% uptime achieved
+// - Zero security incidents
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="1">
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul>
+                        <li class="fragment">API response time reduced by 60%</li>
+                        <li class="fragment">Customer satisfaction up 28%</li>
+                        <li class="fragment">Operational costs down 35%</li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    Our digital transformation has exceeded expectations. The new API infrastructure processes 
+                    transactions 60% faster while maintaining the highest security standards. Customer satisfaction 
+                    has improved dramatically due to faster service delivery and enhanced digital capabilities.
+                </aside>
+            </section>
+
+            <!-- Future Outlook -->
+            <section>
+                <h2>Strategic Outlook & Projections</h2>
+                <div class="fragment fade-in">
+                    <h3>Q4 2025 Projections</h3>
+                    <p>Expected revenue growth based on current trends:</p>
+                    <p>$$\text{Projected Revenue} = \text{Current Revenue} \times (1 + \text{Growth Rate})^{\text{Quarters}}$$</p>
+                    <p>$$\text{Q4 Revenue} = 2.4B \times (1 + 0.153)^{0.25} = 2.49B$$</p>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="1">
+                    <h3>Strategic Initiatives</h3>
+                    <ul>
+                        <li class="fragment">AI-powered fraud detection deployment</li>
+                        <li class="fragment">Blockchain settlement network expansion</li>
+                        <li class="fragment">ESG-focused investment products launch</li>
+                        <li class="fragment">International market expansion (Asia-Pacific)</li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    Looking ahead to Q4, we're projecting continued strong performance with revenue reaching $2.49B. 
+                    Our strategic initiatives focus on AI integration, blockchain technology, and sustainable finance 
+                    products. The Asia-Pacific expansion represents our largest international growth opportunity.
+                </aside>
+            </section>
+
+            <!-- Risk Assessment -->
+            <section>
+                <h2>Risk Assessment & Mitigation</h2>
+                <div class="fragment fade-in">
+                    <h3>Value at Risk (VaR) Analysis</h3>
+                    <p>Portfolio risk calculation using Monte Carlo simulation:</p>
+                    <p>$$VaR_{95\%} = \mu - 1.645 \times \sigma \times \sqrt{t}$$</p>
+                    <p>Where: μ = expected return, σ = volatility, t = time horizon</p>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="1">
+                    <div class="financial-metric">
+                        <div class="metric-label">Daily VaR (95% confidence)</div>
+                        <div class="metric-value">$12.3M</div>
+                        <div style="color: #4CAF50;">↓ 8% vs Q2 2025</div>
+                    </div>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="2">
+                    <h3>Risk Mitigation Strategies</h3>
+                    <ul>
+                        <li class="fragment">Enhanced stress testing protocols</li>
+                        <li class="fragment">Diversified investment portfolio</li>
+                        <li class="fragment">Real-time monitoring systems</li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    Our risk management framework has been strengthened this quarter. The 8% reduction in VaR 
+                    reflects improved portfolio diversification and enhanced risk controls. Our stress testing 
+                    now covers 15 different economic scenarios, providing comprehensive risk visibility.
+                </aside>
+            </section>
+
+            <!-- Technology Stack -->
+            <section>
+                <h2>Technology Infrastructure</h2>
+                <div class="fragment fade-in">
+                    <h3>Core Banking System Architecture</h3>
+                    <pre><code class="yaml" data-trim>
+# Microservices Configuration
+services:
+  transaction-processor:
+    image: bank/transaction-engine:v2.1
+    replicas: 15
+    resources:
+      cpu: "2000m"
+      memory: "4Gi"
+    
+  risk-engine:
+    image: bank/risk-calculator:v1.8
+    replicas: 8
+    environment:
+      - CALCULATION_THREADS=16
+      - CACHE_SIZE=2GB
+    
+  customer-api:
+    image: bank/customer-service:v3.2
+    replicas: 12
+    ports:
+      - "8080:8080"
+                    </code></pre>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="1">
+                    <p><strong>Infrastructure Metrics:</strong> 99.97% uptime, 145ms average response time, zero security breaches</p>
+                </div>
+                <aside class="notes">
+                    Our microservices architecture has proven highly reliable this quarter. The transaction processor 
+                    handles over 50,000 transactions per minute with consistent performance. The risk engine provides 
+                    real-time calculations that support our trading and lending decisions.
+                </aside>
+            </section>
+
+            <!-- Market Performance -->
+            <section data-background-color="#1a237e">
+                <h2>Market Performance Analysis</h2>
+                <div class="fragment fade-in">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="financial-metric" style="width: 30%;">
+                            <div class="metric-label">Loan Portfolio</div>
+                            <div class="metric-value">$18.2B</div>
+                            <div class="growth-indicator">↗ +12.4%</div>
+                        </div>
+                        <div class="financial-metric fragment fade-in" data-fragment-index="1" style="width: 30%;">
+                            <div class="metric-label">Deposits</div>
+                            <div class="metric-value">$24.8B</div>
+                            <div class="growth-indicator">↗ +8.7%</div>
+                        </div>
+                        <div class="financial-metric fragment fade-in" data-fragment-index="2" style="width: 30%;">
+                            <div class="metric-label">Trading Revenue</div>
+                            <div class="metric-value">$156M</div>
+                            <div class="growth-indicator">↗ +31.2%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="3">
+                    <h3>Credit Quality Indicators</h3>
+                    <p>Non-performing loan ratio: <span class="growth-indicator">0.89%</span> (industry best practice: <1.5%)</p>
+                    <p>Provision coverage ratio: <span class="growth-indicator">142%</span></p>
+                </div>
+                <aside class="notes">
+                    Our loan portfolio growth of 12.4% reflects strong market demand and our expanded lending 
+                    capabilities. The exceptional credit quality with NPL ratio of 0.89% demonstrates our 
+                    sophisticated risk assessment processes. Trading revenue surge of 31.2% shows successful 
+                    market-making and client service improvements.
+                </aside>
+            </section>
+
+            <!-- Financial Innovation -->
+            <section>
+                <h2>Financial Innovation & Algorithms</h2>
+                <div class="fragment fade-in">
+                    <h3>Algorithmic Trading Performance</h3>
+                    <p>Sharpe Ratio optimization formula:</p>
+                    <p>$$\text{Sharpe Ratio} = \frac{R_p - R_f}{\sigma_p}$$</p>
+                    <p>$$\text{Where: } R_p = \text{Portfolio Return}, R_f = \text{Risk-free Rate}, \sigma_p = \text{Portfolio Volatility}$$</p>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="1">
+                    <pre><code class="python" data-trim>
+# Portfolio optimization algorithm
+def optimize_portfolio(returns, risk_tolerance):
+    """
+    Modern Portfolio Theory implementation
+    """
+    n_assets = len(returns.columns)
+    
+    # Objective function: minimize risk for given return
+    def objective(weights):
+        portfolio_return = np.sum(returns.mean() * weights) * 252
+        portfolio_volatility = np.sqrt(
+            np.dot(weights.T, np.dot(returns.cov() * 252, weights))
+        )
+        return -portfolio_return / portfolio_volatility  # Negative Sharpe ratio
+    
+    # Constraints and bounds
+    constraints = ({'type': 'eq', 'fun': lambda x: np.sum(x) - 1})
+    bounds = tuple((0, 1) for _ in range(n_assets))
+    
+    result = minimize(objective, n_assets * [1. / n_assets], 
+                     method='SLSQP', bounds=bounds, constraints=constraints)
+    
+    return result.x
+                    </code></pre>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="2">
+                    <p><strong>Algorithm Results:</strong> 23% improvement in risk-adjusted returns</p>
+                </div>
+                <aside class="notes">
+                    Our algorithmic trading platform has delivered exceptional results this quarter. The portfolio 
+                    optimization algorithm, based on Modern Portfolio Theory, has improved our risk-adjusted returns 
+                    by 23%. This system processes over 1 million market data points per second to make optimal 
+                    trading decisions.
+                </aside>
+            </section>
+
+            <!-- ESG & Sustainability -->
+            <section data-transition="zoom">
+                <h2>ESG & Sustainable Finance</h2>
+                <div class="fragment fade-in">
+                    <div class="chart-container">
+                        <h3>Green Bond Portfolio Growth</h3>
+                        <p>Environmental impact calculation:</p>
+                        <p>$$\text{Carbon Reduction} = \sum_{i=1}^{n} \text{Investment}_i \times \text{Carbon Factor}_i$$</p>
+                        <p>$$\text{Total CO}_2\text{ Offset} = 125,000 \text{ metric tons annually}$$</p>
+                    </div>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="1">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="financial-metric" style="width: 45%;">
+                            <div class="metric-label">Green Investments</div>
+                            <div class="metric-value">$3.2B</div>
+                            <div class="growth-indicator">↗ +45% YoY</div>
+                        </div>
+                        <div class="financial-metric fragment fade-in" data-fragment-index="2" style="width: 45%;">
+                            <div class="metric-label">ESG Score</div>
+                            <div class="metric-value">87/100</div>
+                            <div class="growth-indicator">↗ +12 points</div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Our ESG initiatives have gained significant momentum. The 45% growth in green investments 
+                    reflects both market demand and our strategic commitment to sustainable finance. Our improved 
+                    ESG score of 87/100 places us in the top quartile of financial institutions globally.
+                </aside>
+            </section>
+
+            <!-- Q&A and Contact -->
+            <section class="title-slide" data-background-gradient="linear-gradient(45deg, #2a5298, #1e3c72)">
+                <h1>Questions & Discussion</h1>
+                <div class="fragment fade-in">
+                    <h3>Key Takeaways</h3>
+                    <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                        <li class="fragment">Strong financial performance across all metrics</li>
+                        <li class="fragment">Successful digital transformation initiatives</li>
+                        <li class="fragment">Industry-leading risk management capabilities</li>
+                        <li class="fragment">Commitment to sustainable finance and ESG goals</li>
+                    </ul>
+                </div>
+                <div class="fragment fade-in" data-fragment-index="4" style="margin-top: 50px;">
+                    <p><strong>Technical Consultant Contact:</strong></p>
+                    <p style="color: #42A5F5; font-size: 1.2em;">23f3001973@ds.study.iitm.ac.in</p>
+                </div>
+                <aside class="notes">
+                    Thank you for your attention. We're now open for questions about our financial performance, 
+                    technical implementations, or strategic initiatives. Our technical consulting team is available 
+                    for detailed discussions about any aspect of our operations or future plans.
+                </aside>
+            </section>
+        </div>
+        <div class="email-contact">
+            Contact: 23f3001973@ds.study.iitm.ac.in
+        </div>
     </div>
 
-    <!-- RevealJS Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/math/math.min.js"></script>
     <script>
-      Reveal.initialize({
-        hash: true,
-        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
-      });
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            controls: true,
+            progress: true,
+            center: true,
+            touch: true,
+            loop: false,
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealMath.KaTeX
+            ],
+            math: {
+                mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
+                config: 'TeX-AMS_HTML-full',
+                TeX: {
+                    Macros: {
+                        R: '\\mathbb{R}',
+                        set: ['\\left\\{#1 \\; ; \\; #2\\right\\}', 2]
+                    }
+                }
+            },
+            highlight: {
+                beforeHighlight: function(hljs) {
+                    hljs.configure({
+                        tabReplace: '    '
+                    });
+                }
+            }
+        });
+
+        // Add keyboard shortcuts for presentation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 's') {
+                // Toggle speaker notes
+                RevealNotes.toggle();
+            }
+        });
+
+        // Custom animation for metrics
+        Reveal.addEventListener('fragmentshown', function(event) {
+            if (event.fragment.classList.contains('financial-metric')) {
+                event.fragment.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    event.fragment.style.transform = 'scale(1)';
+                }, 200);
+            }
+        });
     </script>
-  </body>
+</body>
 </html>
